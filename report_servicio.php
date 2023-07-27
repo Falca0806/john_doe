@@ -104,7 +104,7 @@ if ( $_SERVER ['REQUEST_METHOD'] == 'GET'){
                 $pdf->Cell(30,7,$rows['cliente_nombre'],1,0,'C');
                 $pdf->Cell(16,7,$rows['cliente_dni'],1,0,'C');
                 $pdf->Cell(25,7,(date('m-d-Y', strtotime($rows['fecha_orden']))),1,0,'C');
-                $pdf->Cell(25,7,$rows['servicio_precio'],1,0,'C');                
+                $pdf->Cell(25,7,$rows['servicio_precio'] .' $',1,0,'C');                
                 
             }
 }
